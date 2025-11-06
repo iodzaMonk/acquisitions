@@ -74,3 +74,5 @@ Use `./setup-docker.sh [dev|prod]` to run the appropriate Compose file without r
 # deploy production compose (detached)
 ./setup-docker.sh prod
 ```
+
+testing CI/CD pipelines
