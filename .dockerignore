@@ -1,0 +1,14 @@
+node_modules
+npm-debug.log
+logs
+coverage
+.drizzle
+.drizzle/*
+.tmp
+.DS_Store
+.git
+.gitignore
+.env
+.env.*
+!.env.example
+docker-compose*.log
