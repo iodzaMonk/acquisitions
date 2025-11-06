@@ -36,6 +36,8 @@
   },
   "homepage": "https://github.com/iodzaMonk/acquisitions#readme",
   "dependencies": {
+    "@arcjet/inspect": "^1.0.0-beta.14",
+    "@arcjet/node": "^1.0.0-beta.14",
     "@neondatabase/serverless": "^1.0.2",
     "bcrypt": "^6.0.0",
     "cookie-parser": "^1.4.7",
