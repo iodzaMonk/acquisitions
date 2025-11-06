@@ -73,3 +73,12 @@
 {"level":"info","message":"::ffff:127.0.0.1 - - [06/Nov/2025:16:12:19 +0000] \"GET /health HTTP/1.1\" 403 51 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
 {"ip":"::ffff:127.0.0.1","level":"warn","message":"Rate limit exceeded","method":"GET","path":"/health","service":"acquisitions-api","userAgent":"Thunder Client (https://www.thunderclient.com)"}
 {"level":"info","message":"::ffff:127.0.0.1 - - [06/Nov/2025:16:12:20 +0000] \"GET /health HTTP/1.1\" 403 51 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Nov/2025:17:22:46 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Nov/2025:17:22:46 +0000] \"GET /api HTTP/1.1\" 200 40 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Nov/2025:17:22:46 +0000] \"GET /nonexistent HTTP/1.1\" 404 27 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Nov/2025:17:23:10 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Nov/2025:17:23:10 +0000] \"GET /api HTTP/1.1\" 200 40 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Nov/2025:17:23:10 +0000] \"GET /nonexistent HTTP/1.1\" 404 27 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Nov/2025:17:23:26 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Nov/2025:17:23:26 +0000] \"GET /api HTTP/1.1\" 200 40 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Nov/2025:17:23:26 +0000] \"GET /nonexistent HTTP/1.1\" 404 27 \"-\" \"-\"","service":"acquisitions-api"}

@@ -1,0 +1,84 @@
+name: Tests
+
+on:
+  push:
+    branches:
+      - main
+      - staging
+  pull_request:
+    branches:
+      - main
+      - staging
+
+jobs:
+  unit-tests:
+    name: Run unit tests
+    runs-on: ubuntu-latest
+    env:
+      NODE_ENV: test
+      NODE_OPTIONS: --experimental-vm-modules
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests with coverage
+        id: tests
+        run: npm test -- --coverage
+        continue-on-error: true
+
+      - name: Upload coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: coverage
+          if-no-files-found: warn
+          retention-days: 30
+
+      - name: Publish test summary
+        if: always()
+        run: |
+          echo "## Test Results" >> "$GITHUB_STEP_SUMMARY"
+          if [ "${{ steps.tests.outcome }}" = "success" ]; then
+            echo "Tests ✅ All suites passed." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Tests ❌ Failures detected. Review the logs above." >> "$GITHUB_STEP_SUMMARY"
+          fi
+          if [ -f coverage/coverage-summary.json ]; then
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "| Metric | % | Covered | Total |" >> "$GITHUB_STEP_SUMMARY"
+            echo "| --- | --- | --- | --- |" >> "$GITHUB_STEP_SUMMARY"
+            node <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs = require('fs');
+          const summary = JSON.parse(fs.readFileSync('coverage/coverage-summary.json', 'utf8')).total;
+          const metrics = ['lines', 'statements', 'branches', 'functions'];
+          for (const key of metrics) {
+            if (!summary[key]) continue;
+            const data = summary[key];
+            const pct = data.pct ?? 0;
+            const covered = data.covered ?? 0;
+            const total = data.total ?? 0;
+            console.log(`| ${key} | ${pct}% | ${covered} | ${total} |`);
+          }
+          NODE
+          else
+            echo "Coverage summary not generated." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Annotate test failures
+        if: steps.tests.outcome == 'failure'
+        run: |
+          echo "::error title=Tests failed::Rerun locally with 'npm test -- --coverage' to reproduce and fix."
+          exit 1
