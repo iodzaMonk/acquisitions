@@ -1,0 +1,47 @@
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [03/Nov/2025:01:08:46 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [03/Nov/2025:01:08:46 +0000] \"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1\" 404 187 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [03/Nov/2025:01:19:27 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [03/Nov/2025:01:19:28 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [03/Nov/2025:01:20:04 +0000] \"GET /api HTTP/1.1\" 404 142 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [03/Nov/2025:01:20:06 +0000] \"GET /api HTTP/1.1\" 404 142 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [03/Nov/2025:01:20:12 +0000] \"GET /api HTTP/1.1\" 404 142 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [03/Nov/2025:01:20:12 +0000] \"GET /api HTTP/1.1\" 404 142 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [03/Nov/2025:01:20:12 +0000] \"GET /api HTTP/1.1\" 404 142 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [03/Nov/2025:01:20:13 +0000] \"GET /api HTTP/1.1\" 404 142 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [03/Nov/2025:01:20:13 +0000] \"GET /api HTTP/1.1\" 404 142 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [03/Nov/2025:01:20:17 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [03/Nov/2025:01:20:18 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [03/Nov/2025:01:20:24 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [03/Nov/2025:01:20:28 +0000] \"GET /api HTTP/1.1\" 200 40 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [03/Nov/2025:01:20:53 +0000] \"POST /auth/sign-in HTTP/1.1\" 404 152 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [03/Nov/2025:01:21:32 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 31 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Nov/2025:12:52:06 +0000] \"GET /api/auth/sign-up HTTP/1.1\" 404 155 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Nov/2025:12:52:11 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 93 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: contact@jsmastery.com","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Nov/2025:12:53:09 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 107 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"error","message":"Error creating the user: TypeError: email.select is not a function","service":"acquisitions-api"}
+{"level":"error","message":"Signup error Cannot read properties of undefined (reading 'id')","service":"acquisitions-api","stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at signup (file:///home/iodza/Work/acquisitions/src/controllers/auth.controller.js:22:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Nov/2025:13:13:07 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 500 399 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"error","message":"Error creating the user: TypeError: email.select is not a function","service":"acquisitions-api"}
+{"level":"error","message":"Signup error Cannot read properties of undefined (reading 'id')","service":"acquisitions-api","stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at signup (file:///home/iodza/Work/acquisitions/src/controllers/auth.controller.js:22:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Nov/2025:13:18:19 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 500 399 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"User admin@jsmastery.com created successfully","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: admin@jsmastery.com","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Nov/2025:13:20:01 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 105 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"error","message":"Error authenticating the user: Error: User not found","service":"acquisitions-api"}
+{"level":"error","message":"Signin error User not found","service":"acquisitions-api","stack":"Error: User not found\n    at authenticateUser (file:///home/iodza/Work/acquisitions/src/services/auth.service.js:72:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signIn (file:///home/iodza/Work/acquisitions/src/controllers/auth.controller.js:63:18)"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Nov/2025:15:49:46 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 401 37 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"error","message":"Error authenticating the user: Error: User not found","service":"acquisitions-api"}
+{"level":"error","message":"Signin error User not found","service":"acquisitions-api","stack":"Error: User not found\n    at authenticateUser (file:///home/iodza/Work/acquisitions/src/services/auth.service.js:72:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signIn (file:///home/iodza/Work/acquisitions/src/controllers/auth.controller.js:63:18)"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Nov/2025:15:49:59 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 401 37 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"User admin@jsmastery.pro created successfully","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: admin@jsmastery.pro","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Nov/2025:15:50:07 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 104 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"User admin@jsmastery.pro authenticated successfully","service":"acquisitions-api"}
+{"level":"info","message":"User signed in successfully: admin@jsmastery.pro","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Nov/2025:15:50:17 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 103 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"User signed out successfully","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Nov/2025:15:50:32 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 200 29 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
