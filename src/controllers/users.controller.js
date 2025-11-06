@@ -5,7 +5,10 @@ import {
   updateUser as updateUserService,
   deleteUser as deleteUserService,
 } from '#services/users.service.js';
-import { userIdSchema, updateUserSchema } from '#validations/users.validation.js';
+import {
+  userIdSchema,
+  updateUserSchema,
+} from '#validations/users.validation.js';
 import { formatValidationError } from '#utils/format.js';
 import { jwttoken } from '#utils/jwt.js';
 import { cookies } from '#utils/cookies.js';
